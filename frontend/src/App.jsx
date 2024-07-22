@@ -1,9 +1,16 @@
-import './App.css'
+import React from 'react';
+import Header from './components/Header';
+import Filters from './components/Filters';
+import Dashboard from './components/Dashboard';
 
-function App() {
+const App = () => {
   return (
-    <h1 className=" text-2xl"> This is working</h1>
-  )
-}
+    <div className="min-h-screen bg-gray-100 p-4">
+      <Header />
+      <Filters />
+      <Dashboard />
+    </div>
+  );
+};
 
-export default App
+export default App;

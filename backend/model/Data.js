@@ -7,11 +7,13 @@ const dataSchema = new mongoose.Schema({
   likelihood: Number,
   relevance: Number,
   country: String,
-  topics: String,
+  topic: String,
   region: String,
   city: String,
   end_year : Date,
-  start_year : Date
+  sector : String,
+  start_year : Date,
+  published : Date
 });
 
 module.exports = mongoose.model('test_data', dataSchema);

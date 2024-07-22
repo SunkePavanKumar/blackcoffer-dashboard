@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const dataRoutes = require("./routes/dataRoutes")
 dotenv.config();
 
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware to parse JSON
 app.use(express.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI,{serverSelectionTimeoutMS: 50000})

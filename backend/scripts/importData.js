@@ -5,7 +5,7 @@ const Data = require('../model/Data');
 
 dotenv.config();
 
-mongoose.connect("connection string")
+mongoose.connect("mongodb+srv://pavan1413489:<YourPassword>@cluster0.g3xomyl.mongodb.net/black-coffer")
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log(err));
 
